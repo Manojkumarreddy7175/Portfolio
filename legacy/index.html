@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manoj Kumar Reddy - Full Stack Developer & AI Engineer">
+    <title>Manoj Kumar Reddy — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h2>Manoj <span class="logo-dot">.</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn-talk">Let's talk</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <span class="star-icon">✦</span>
+                        <span>Available for new projects</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Building <span class="highlight-orange">Digital Products</span> &amp; <span class="highlight-orange">AI Solutions</span>
+                    </h1>
+                    <div class="hero-tags">
+                        <span class="tag">Full Stack</span>
+                        <span class="tag-dot">•</span>
+                        <span class="tag">AI Engineer</span>
+                        <span class="tag-dot">•</span>
+                        <span class="tag">RAG Expert</span>
+                    </div>
+                    <p class="hero-description">
+                        I'm <span class="highlight-interactive">Manoj Kumar Reddy</span>, a developer passionate about building intelligent applications that solve real problems. Specializing in full-stack development and AI-powered solutions.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Manojkumarreddy7175" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/manojkumarreddy7175" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:manojkumarreddy7175@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div id="avatar-container" class="avatar-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-bg-text">PROFILE</div>
+        <div class="container">
+            <div class="about-content-redesigned">
+                <h2 class="about-headline glitch" data-text="ENGINEERING INTELLIGENCE">Engineering <span class="highlight-red">Intelligence</span></h2>
+                <p class="about-subhead">Turning messy requirements into elegant, working products.</p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <span class="card-number">01</span>
+                        <h3>The Mission</h3>
+                        <p>I build intelligent agents and RAG pipelines that solve real problems. My code doesn't just run; it thinks.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="card-number">02</span>
+                        <h3>The Craft</h3>
+                        <p>Full-stack development is a discipline. From database schemas to pixel-perfect UIs, I own the entire lifecycle.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="card-number">03</span>
+                        <h3>The Stack</h3>
+                        <p>Java, Python, Spring Boot, Flask. These aren't just tools; they are extensions of my engineering mindset.</p>
+                    </div>
+                </div>
+
+                <div class="about-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">LOCATION</span>
+                        <span class="spec-value">Amaravati, India</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">EDUCATION</span>
+                        <span class="spec-value">Integrated M.Tech (VIT-AP)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">STATUS</span>
+                        <span class="spec-value status-active">Available for Hire</span>
+                    </div>
+                </div>
+
+                <a href="resume.pdf" class="btn-resume" download>
+                    <span class="btn-text">Initiate Resume Download</span>
+                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">02 // CAPABILITIES</span>
+                <h2 class="section-title-large glitch" data-text="TECH ARSENAL">TECH ARSENAL</h2>
+            </div>
+            
+            <div class="skills-matrix">
+                <!-- Core Module -->
+                <div class="skill-module">
+                    <div class="module-header">
+                        <span class="module-id">SYS.01</span>
+                        <h3>LANGUAGES & CORE</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="tech-bar">
+                            <span class="tech-name">JAVA</span>
+                            <div class="progress-track"><div class="progress-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="tech-bar">
+                            <span class="tech-name">PYTHON</span>
+                            <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="tech-bar">
+                            <span class="tech-name">JAVASCRIPT</span>
+                            <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="tech-bar">
+                            <span class="tech-name">SQL</span>
+                            <div class="progress-track"><div class="progress-fill" style="width: 88%"></div></div>
+                        </div>
+                        <div class="tech-bar">
+                            <span class="tech-name">DSA & OOP</span>
+                            <div class="progress-track"><div class="progress-fill" style="width: 92%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Module -->
+                <div class="skill-module">
+                    <div class="module-header">
+                        <span class="module-id">SYS.02</span>
+                        <h3>BACKEND INFRA</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="tech-item">SPRING BOOT</div>
+                        <div class="tech-item">FLASK & FASTAPI</div>
+                        <div class="tech-item">MYSQL</div>
+                        <div class="tech-item">MONGODB</div>
+                        <div class="tech-item">FIREBASE</div>
+                        <div class="tech-item">MICROSERVICES</div>
+                    </div>
+                </div>
+
+                <!-- AI Module -->
+                <div class="skill-module highlight-module">
+                    <div class="module-header">
+                        <span class="module-id">SYS.03</span>
+                        <h3>AI & INTELLIGENCE</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="tech-item">LANGCHAIN</div>
+                        <div class="tech-item">RAG PIPELINES</div>
+                        <div class="tech-item">OPENAI API</div>
+                        <div class="tech-item">GOOGLE GENAI</div>
+                        <div class="tech-item">OLLAMA</div>
+                        <div class="tech-item">CHROMADB</div>
+                    </div>
+                </div>
+
+                <!-- Tools Module -->
+                <div class="skill-module">
+                    <div class="module-header">
+                        <span class="module-id">SYS.04</span>
+                        <h3>OPS & TOOLS</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="tech-item">GIT & GITHUB</div>
+                        <div class="tech-item">SELENIUM</div>
+                        <div class="tech-item">FIRECRAWL API</div>
+                        <div class="tech-item">WEB SCRAPING</div>
+                        <div class="tech-item">AGILE / SDLC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">03 // PORTFOLIO</span>
+                <h2 class="section-title-large glitch" data-text="DEPLOYED SYSTEMS">DEPLOYED SYSTEMS</h2>
+            </div>
+
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-row">
+                    <div class="project-meta">
+                        <span class="project-id">PRJ-001</span>
+                        <span class="project-status">DEPLOYED</span>
+                    </div>
+                    <div class="project-main">
+                        <h3 class="project-name">ApplyMate</h3>
+                        <p class="project-desc">AI Job Discovery Platform. Aggregates listings from multiple boards with automated email delivery and AI matching algorithms.</p>
+                        <div class="project-stack">
+                            <span>PYTHON</span><span>SELENIUM</span><span>STREAMLIT</span><span>GENAI</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Manojkumarreddy7175/ApplyMate" target="_blank" class="btn-action">
+                            SOURCE CODE <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-row">
+                    <div class="project-meta">
+                        <span class="project-id">PRJ-002</span>
+                        <span class="project-status">DEPLOYED</span>
+                    </div>
+                    <div class="project-main">
+                        <h3 class="project-name">File Query GPT</h3>
+                        <p class="project-desc">Advanced RAG system supporting multi-format ingestion (PDF, PPT, Audio). 85% retrieval accuracy via LangChain pipeline.</p>
+                        <div class="project-stack">
+                            <span>LANGCHAIN</span><span>CHROMADB</span><span>WHISPER</span><span>PYTHON</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Aniruth2003/Interactive-File-Query-GPT" target="_blank" class="btn-action">
+                            SOURCE CODE <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-row">
+                    <div class="project-meta">
+                        <span class="project-id">PRJ-003</span>
+                        <span class="project-status">LOCAL</span>
+                    </div>
+                    <div class="project-main">
+                        <h3 class="project-name">NL2SQL Agent</h3>
+                        <p class="project-desc">Privacy-first AI backend translating natural language to optimized SQLite queries for e-commerce analytics.</p>
+                        <div class="project-stack">
+                            <span>FASTAPI</span><span>MISTRAL LLM</span><span>SQLITE</span><span>PYTHON</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Manojkumarreddy7175/nl2sql-ecommerce-agent" target="_blank" class="btn-action">
+                            SOURCE CODE <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-row">
+                    <div class="project-meta">
+                        <span class="project-id">PRJ-004</span>
+                        <span class="project-status">LIVE</span>
+                    </div>
+                    <div class="project-main">
+                        <h3 class="project-name">Find Your AI</h3>
+                        <p class="project-desc">Discovery platform for 45+ AI tools with advanced categorization and search filtering.</p>
+                        <div class="project-stack">
+                            <span>NEXT.JS</span><span>TYPESCRIPT</span><span>TAILWIND</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://find-your-ai-one.vercel.app/" target="_blank" class="btn-action">
+                            LIVE DEMO <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <span class="section-label">04 // UPLINK</span>
+                    <h2 class="section-title-large glitch" data-text="INITIATE CONTACT">INITIATE CONTACT</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <div class="contact-block">
+                            <span class="block-label">PRIMARY FREQUENCY</span>
+                            <a href="mailto:manojkumarreddy7175@gmail.com" class="block-value">manojkumarreddy7175@gmail.com</a>
+                        </div>
+                        <div class="contact-block">
+                            <span class="block-label">ACADEMIC FREQUENCY</span>
+                            <a href="mailto:kodurumanojkumar53@gmail.com" class="block-value">kodurumanojkumar53@gmail.com</a>
+                        </div>
+                        <div class="contact-block">
+                            <span class="block-label">COORDINATES</span>
+                            <span class="block-value">Amaravati, India (VIT-AP)</span>
+                        </div>
+                    </div>
+
+                    <form class="contact-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">MESSAGE_TRANSMITTER.EXE</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="input-group">
+                                <label>> SENDER_ID:</label>
+                                <input type="text" name="name" required autocomplete="off">
+                            </div>
+                            <div class="input-group">
+                                <label>> RETURN_ADDRESS:</label>
+                                <input type="email" name="email" required autocomplete="off">
+                            </div>
+                            <div class="input-group">
+                                <label>> SUBJECT_LINE:</label>
+                                <input type="text" name="subject" required autocomplete="off">
+                            </div>
+                            <div class="input-group">
+                                <label>> PAYLOAD:</label>
+                                <textarea name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-transmit">TRANSMIT DATA</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-logo">MANOJ.SYSTEM</span>
+                    <p class="brand-tagline">ENGINEERING INTELLIGENCE FOR THE WEB.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">SYS.HOME</a>
+                    <a href="#about">SYS.ABOUT</a>
+                    <a href="#skills">SYS.SKILLS</a>
+                    <a href="#projects">SYS.PROJECTS</a>
+                    <a href="#contact">SYS.CONTACT</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Manoj7175" target="_blank" class="social-link">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/manoj-kumar-reddy-koduru-007580258/" target="_blank" class="social-link">LINKEDIN</a>
+                    <a href="https://www.instagram.com/manoj_reddy_7175/" target="_blank" class="social-link">INSTAGRAM</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span>SYSTEM ONLINE // ALL SYSTEMS OPERATIONAL</span>
+                </div>
+                <p class="copyright">&copy; 2025 MANOJ KUMAR REDDY. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
