@@ -16,8 +16,8 @@ const Contact = () => {
           
           <div className="contact-links">
             <a href="mailto:manojkumarreddy7175@gmail.com">manojkumarreddy7175@gmail.com</a>
-            <a href="https://github.com/manoj7654" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/manojkumarreddy7654" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Manojkumarreddy7175/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/manojkumarreddy7175/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </motion.div>
       </div>

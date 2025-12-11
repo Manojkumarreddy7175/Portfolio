@@ -13,7 +13,7 @@ const About = () => {
         >
           <h2 className="section-title">About</h2>
           <p className="section-description">
-            I'm a pre-final year student studying Computer Science at VIT-AP, Amaravati. 
+            I'm a final year student studying Software Engineering at VIT. 
             I mainly work in AI/ML, full-stack development, and building intelligent systems with RAG pipelines.
           </p>
           <div className="skills-list">

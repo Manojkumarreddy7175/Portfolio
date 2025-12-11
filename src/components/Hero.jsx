@@ -39,10 +39,10 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            <a href="https://github.com/Manoj7175" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/manoj-kumar-reddy-koduru-007580258/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/Manojkumarreddy7175/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/manojkumarreddy7175/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="mailto:manojkumarreddy7175@gmail.com">Email</a>
-            <a href="https://www.instagram.com/manoj_reddy_7175/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
           </motion.div>
         </motion.div>
       </div>
