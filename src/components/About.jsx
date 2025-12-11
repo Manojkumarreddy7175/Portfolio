@@ -1,56 +1,39 @@
 import React from 'react';
-import SectionWrapper from './SectionWrapper';
-import TiltCard from './TiltCard';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <SectionWrapper id="about" className="about">
-      <div className="about-bg-text">PROFILE</div>
+    <section id="about" className="about">
       <div className="container">
-        <div className="about-content-redesigned">
-          <h2 className="about-headline glitch" data-text="ENGINEERING INTELLIGENCE">Engineering <span className="highlight-red">Intelligence</span></h2>
-          <p className="about-subhead">Turning messy requirements into elegant, working products.</p>
-          
-          <div className="about-grid">
-            <TiltCard className="about-card">
-              <span className="card-number">01</span>
-              <h3>The Mission</h3>
-              <p>I build intelligent agents and RAG pipelines that solve real problems. My code doesn't just run; it thinks.</p>
-            </TiltCard>
-            <TiltCard className="about-card">
-              <span className="card-number">02</span>
-              <h3>The Craft</h3>
-              <p>Full-stack development is a discipline. From database schemas to pixel-perfect UIs, I own the entire lifecycle.</p>
-            </TiltCard>
-            <TiltCard className="about-card">
-              <span className="card-number">03</span>
-              <h3>The Stack</h3>
-              <p>Java, Python, Spring Boot, Flask. These aren't just tools; they are extensions of my engineering mindset.</p>
-            </TiltCard>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="section-title">About</h2>
+          <p className="section-description">
+            I'm a pre-final year student studying Computer Science at VIT-AP, Amaravati. 
+            I mainly work in AI/ML, full-stack development, and building intelligent systems with RAG pipelines.
+          </p>
+          <div className="skills-list">
+            {["Java", "Python", "JavaScript", "React", "Spring Boot", "Flask", "FastAPI", "LangChain", "RAG Pipelines", "OpenAI API", "MySQL", "MongoDB"].map((skill, index) => (
+              <motion.span 
+                key={index} 
+                className="skill-tag"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05, duration: 0.3 }}
+                whileHover={{ scale: 1.05, backgroundColor: "var(--accent-color)", color: "#fff", borderColor: "var(--accent-color)" }}
+              >
+                {skill}
+              </motion.span>
+            ))}
           </div>
-
-          <div className="about-specs">
-            <div className="spec-item">
-              <span className="spec-label">LOCATION</span>
-              <span className="spec-value">Amaravati, India</span>
-            </div>
-            <div className="spec-item">
-              <span className="spec-label">EDUCATION</span>
-              <span className="spec-value">Integrated M.Tech (VIT-AP)</span>
-            </div>
-            <div className="spec-item">
-              <span className="spec-label">STATUS</span>
-              <span className="spec-value status-active">Available for Hire</span>
-            </div>
-          </div>
-
-          <a href="resume.pdf" className="btn-resume" download>
-            <span className="btn-text">Initiate Resume Download</span>
-            <i className="fas fa-download" style={{marginLeft: '10px'}}></i>
-          </a>
-        </div>
+        </motion.div>
       </div>
-    </SectionWrapper>
+    </section>
   );
 };
 
